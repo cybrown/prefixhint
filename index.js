@@ -8,9 +8,6 @@ var data = {
 	},
 	'transform': {
 		prefixes: ['none', 'webkit', 'ms']
-	},
-	'border-radius': {
-		prefixes: ['none', 'webkit']
 	}
 };
 
