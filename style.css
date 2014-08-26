@@ -1,0 +1,9 @@
+a {
+	text-align: left;
+	transform: translate(0, 50%);
+	-ms-transform: translate(0, 50%);
+	-webkit-transform: translate(0, 50%);
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	animation: text;
+}
