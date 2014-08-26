@@ -65,6 +65,9 @@ ast.stylesheet.rules.forEach(function (rule) {
 		return;
 	}
 	rule.declarations.forEach(function (declaration) {
+		if (declaration.type !== 'declaration') {
+			return;
+		}
 		var propertyWithoutPrefix = removePrefix(declaration.property);
 		if (data.hasOwnProperty(propertyWithoutPrefix)) {
 			var prefix = getPrefix(declaration.property);
