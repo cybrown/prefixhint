@@ -8,6 +8,9 @@ var data = {
 	},
 	'transform': {
 		prefixes: ['none', 'webkit', 'ms']
+	},
+	'transform-origin': {
+		prefixes: ['none', 'webkit', 'ms']
 	}
 };
 
