@@ -61,6 +61,9 @@ var ast = css.parse(content, {
 ast.stylesheet.rules.forEach(function (rule) {
 	var toVerify = {};
 	var lineNumber = rule.position.start.line;
+	if (!rule.declarations) {
+		return;
+	}
 	rule.declarations.forEach(function (declaration) {
 		var propertyWithoutPrefix = removePrefix(declaration.property);
 		if (data.hasOwnProperty(propertyWithoutPrefix)) {
